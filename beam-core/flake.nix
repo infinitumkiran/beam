@@ -18,6 +18,7 @@
           autoWire = ["packages" "checks" "devShells" "apps"];
           packages ={
             regex-tdfa.source="1.3.2.5";
+            pqueue.source = "1.5.0.0";
           };
           settings = {
             pretty-simple = {
