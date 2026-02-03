@@ -16,8 +16,15 @@
           projectFlakeName = "beam";
           basePackages = pkgs.haskell.packages.ghc98;
           autoWire = ["packages" "checks" "devShells" "apps"];
-          packages ={
-            regex-tdfa.source="1.3.2.5";
+          devShell.tools = hp: {
+            "haskell-language-server" = null;
+          };
+          packages = {
+            beam-core.source = ./beam-core;
+            beam-migrate.source = ./beam-migrate;
+            beam-migrate-cli.source = ./beam-migrate-cli;
+            beam-postgres.source = ./beam-postgres;
+            beam-sqlite.source = ./beam-sqlite;
           };
           settings = {
             pretty-simple = {
@@ -27,4 +34,4 @@
         };
       };
     });
-}  
+}

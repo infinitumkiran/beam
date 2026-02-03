@@ -45,6 +45,7 @@ module Database.Beam.Sqlite.Syntax
   ) where
 
 import           Database.Beam.Backend.SQL
+import           Database.Beam.Backend.SQL.SQL92
 import           Database.Beam.Backend.SQL.AST (ExtractField(..))
 import           Database.Beam.Haskell.Syntax
 import           Database.Beam.Migrate.Checks (HasDataTypeCreatedCheck(..))

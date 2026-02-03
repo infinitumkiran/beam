@@ -87,6 +87,7 @@ module Database.Beam.Postgres.Syntax
 
 import           Database.Beam hiding (insert)
 import           Database.Beam.Backend.SQL
+import           Database.Beam.Backend.SQL.SQL92
 import           Database.Beam.Migrate
 import           Database.Beam.Migrate.Checks (HasDataTypeCreatedCheck(..))
 import           Database.Beam.Migrate.SQL.Builder hiding (fromSqlConstraintAttributes)

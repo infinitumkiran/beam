@@ -16,8 +16,10 @@
           projectFlakeName = "beam";
           basePackages = pkgs.haskell.packages.ghc98;
           autoWire = ["packages" "checks" "devShells" "apps"];
+          devShell.tools = hp: {
+            "haskell-language-server" = null;
+          };
           packages ={
-            regex-tdfa.source="1.3.2.5";
             pqueue.source = "1.5.0.0";
           };
           settings = {
@@ -28,4 +30,4 @@
         };
       };
     });
-}  
+}
